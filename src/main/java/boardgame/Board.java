@@ -24,7 +24,16 @@ public class Board {
         return columns;
     }
 
+    public Piece piece(Position position){
+        if(!positionExists(position)){
+            throw new BoardException("Position not on the board");
+        }
+        return pieces[position.getRow()][position.getColumn()];
+    }
 
+    private boolean positionExists(int row, int column) {
+        return row >= 0 && row < rows && column >= 0 && column < columns;
+    }
 
     /*
     explica me essa imagem para realizar um código em java de programação
