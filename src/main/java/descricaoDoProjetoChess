@@ -1,0 +1,28 @@
+Etapas do Projeto
+1 - Criar estrutura de pacotes
+src/
+├── boardgame/
+│   ├── Board.java
+│   ├── Position.java
+│   ├── Piece.java
+│   └── BoardException.java
+└── chess/
+    ├── ChessMatch.java
+    ├── ChessPiece.java
+    ├── ChessPosition.java
+    ├── ChessException.java
+    ├── enums/Color.java
+    └── pieces/
+        ├── King.java
+        ├── Queen.java
+        ├── Bishop.java
+        ├── Knight.java
+        ├── Rook.java
+        └── Pawn.java
+Criar as classes da camada boardgame primeiro. São genéricas e independem das regras do xadrez.
+
+Depois implementar ChessPiece e suas subclasses (King, Queen...), definindo os movimentos.
+
+Por fim, implementar ChessMatch, que é o controlador do jogo: alterna turnos, verifica xeque, movimenta peças, etc.
+
+Adicionar entrada/saída: você pode criar uma classe UI com métodos para imprimir o tabuleiro no console e ler entradas do usuário.
