@@ -15,5 +15,5 @@ public class Piece {
 
     //método abstrato: cada peça (rei, bispo, etc) vai implementar esse método
     public abstract boolean[][] possibleMoves();
-    
+
 }
