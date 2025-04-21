@@ -9,4 +9,27 @@ Remover um funcionário da lista
 Salvar os dados em um arquivo .txt, garantindo que as informações persistam mesmo
 após o encerramento do programa
 
-Os dados dos funcionários são mantido em tempo real utilizando uma estrutura ArrayList 
+Os dados dos funcionários são mantido em tempo real utilizando uma estrutura ArrayList
+
+Organização do projeto
+File: salvar os dados da lista em um arquivo .txt
+-- arquiloUtils.java
+
+Servicee: mantém a lista de funcinários (arryaList<Usuario)
+-- Adicionar um usuário
+-- Atualizar um usuário
+-- Remover um usuário
+-- Listar todos os usuários
+
+Como tudo se conecta
+[Usuario.java]         -> modelo de dado
+         ↑
+         | usa
+[UsuarioService.java]  -> lógica de cadastro
+         ↑
+         | usa
+[FuncionarioGUI.java]  -> interface com o usuário
+         ↓
+[ArquivoUtils.java]    -> salva os dados no arquivo
+
+Main.java inicia tudo
