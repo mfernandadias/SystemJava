@@ -1,0 +1,12 @@
+Projeto Inicial
+Este projeto tem como objetivo desenvolver um
+sistema simples de cadastro de funcionários, utilizando Java com orientação a objetos.
+O sistema permite as seguintes funcionalidades:
+Cadastrar funcionários, inserindo: nome, telefone e cargo.
+Listar todos os funcionários
+Atualizar os dados de um funcionário
+Remover um funcionário da lista
+Salvar os dados em um arquivo .txt, garantindo que as informações persistam mesmo
+após o encerramento do programa
+
+Os dados dos funcionários são mantido em tempo real utilizando uma estrutura ArrayList 
