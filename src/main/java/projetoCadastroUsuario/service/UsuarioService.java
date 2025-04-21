@@ -13,7 +13,7 @@ public class UsuarioService {
     }
 
     //esta realizando
-    public ArrayList<Usuario> listarUsuario(){
+    public ArrayList<Usuario> listarUsuarios(){
         return usuarios;
     }
 
