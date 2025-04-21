@@ -1,4 +1,4 @@
-package chess;
+package projetoChess.chess;
 
 public class ChessPiece {
 }

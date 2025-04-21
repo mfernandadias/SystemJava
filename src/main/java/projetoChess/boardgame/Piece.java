@@ -1,4 +1,4 @@
-package boardgame;
+package projetoChess.boardgame;
 
 public abstract class Piece {
     protected Position position;

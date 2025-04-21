@@ -1,6 +1,6 @@
-package application;
+package projetoChess.application;
 
-import boardgame.Position;
+import projetoChess.boardgame.Position;
 
 public class Program{
     public static void main(String[]  args){

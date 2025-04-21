@@ -1,4 +1,4 @@
-package boardgame;
+package projetoChess.boardgame;
 
 public class Board {
 
