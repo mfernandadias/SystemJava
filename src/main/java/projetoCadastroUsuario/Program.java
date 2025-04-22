@@ -30,6 +30,10 @@ public class Program {
                     String telefone = scan.nextLine();
                     System.out.println("Cargo: ");
                     String cargo = scan.nextLine();
+
+                    Usuario novoUsuario = new Usuario(nome, telefone, cargo);
+                    usuarioService.adicionarUsuario(novoUsuario);  // <--- ESSA LINHA FALTAVA
+                    System.out.println("Funcionário cadastrado com sucesso!");
                     break;
                 case 2:
                     int i = 0;
@@ -52,10 +56,24 @@ public class Program {
                     usuarioService.atualizarUsuario(index, atual);
                     break;
                 case 4:
-                    System.out.println("Índice para excluir")
+                    System.out.print("Índice para excluir: ");
+                    int excluir = scan.nextInt();
+                    usuarioService.removerUsuario(excluir);
+                    break;
+
+                case 5:
+                    ArquivoUtils.salvarUsuarios(usuarioService.listarUsuarios(), caminhoArquivo);
+                    break;
+
+                case 6:
+                    System.out.println("Saindo...");
+                    return;
+
+                default:
+                    System.out.println("Opção inválida.");
+
             }
         }
-
 
     }
 }
