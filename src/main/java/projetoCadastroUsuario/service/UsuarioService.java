@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class UsuarioService {
     private ArrayList<Usuario> usuarios = new ArrayList<>();
 
-    public void addcionarUsuario(Usuario usuario){
+    public void adicionarUsuario(Usuario usuario){
         usuarios.add(usuario);
     }
 
