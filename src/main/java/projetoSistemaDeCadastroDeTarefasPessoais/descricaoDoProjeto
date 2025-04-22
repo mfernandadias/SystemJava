@@ -1,0 +1,43 @@
+Projeto
+Criar um sistema onde o usuário podde organizar suas tarefas diárias, com cadastro, listagem,
+atualização e remoção
+
+Funcionalidades
+* Cadastrar tarefa, informando:
+Título da tarefa
+Descrição
+Prioridade (Alta, Média ou Baixa)
+
+* Listar todas as tarefas cadastradas
+* Atualizar uma tarefas cadastradas
+* Remover uma tarefa existente
+* Remover uma tarefa da lista
+* Salvar todas as tarefas em um arquivo .txt
+
+
+Conteúdos que você vai praticar (os mesmos do projeto anterior)
+Conceito	         Aplicação no projeto
+ArrayList	         Armazenar as tarefas em tempo real
+Encapsulamento	     Criar atributos privados com getters/setters
+Herança (opcional)	 Ex: criar um tipo de tarefa que herda de uma classe base
+Classes separadas	 model, service, file, interface (GUI)
+Swing	             Criar interface gráfica com campos e botões
+
+Escrita em .txt	Salvar tarefas para manter os dados registrados
+
+Estrutura sugerida:
+src/
+├── file/
+│   └── ArquivoTarefas.java        // salvar tarefas no .txt
+├── model/
+│   └── Tarefa.java                // classe com título, descrição, prioridade
+├── service/
+│   └── TarefaService.java         // lógica para adicionar, remover, atualizar
+├── TarefaGUI.java                 // interface com Swing
+└── Main.java                      // executa o app
+
+Extras para desafio:
+Adicionar filtro por prioridade
+Adicionar campo de data de vencimento da tarefa
+Marcar tarefa como "concluída" com um checkbox
+Salvar e ler do arquivo .txt
